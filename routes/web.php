@@ -19,6 +19,7 @@ use App\Http\Controllers\VerifyController;
 use App\Http\Controllers\MyCollectionController;
 use App\Http\Controllers\MarketPlaceDetailsController;
 use App\Http\Controllers\ProductUploadController;
+use App\Http\Controllers\TableController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,3 +76,5 @@ Route::get('/market-place-details',[MarketPlaceDetailsController::class,'index']
 Route::get('/upload-product',[ProductUploadController::class,'index']);
 
 Route::post('/change-password',[SettingController::class,'changePassword']);
+
+Route::get('/table',[TableController::class,'index']);
