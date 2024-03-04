@@ -106,6 +106,6 @@ class DashboardController extends Controller
 
        //dd($sliderBanner);
 
-        return view('Dashboard',['AllNFTSUpdate'=>$AllNFTSUpdate,'AllNFTSUpdateV2'=>$AllNFTSUpdateV2,'AllNFTSUpdateV3'=>$AllNFTSUpdateV3,'TopSeller'=>$TopSeller,'TopBuyer'=>$TopBuyer,'SellHistory'=>$SellHistory,'MarketVisitor'=>$MarketVisitor,'sliderBanner'=>$sliderBanner,'TrendingAction'=>$TrendingAction,'CurrentBid'=>$CurrentBid,'MarketVisitorMonthly'=>$MarketVisitorMonthly,'MarketVisitorWeekly'=>$MarketVisitorWeekly]);
+        return view('Dashboard',['AllNFTSUpdate'=>$AllNFTSUpdate,'AllNFTSUpdateV2'=>$AllNFTSUpdateV2,'AllNFTSUpdateV3'=>$AllNFTSUpdateV3,'TopSeller'=>$TopSeller,'TopBuyer'=>$TopBuyer,'SellHistory'=>$SellHistory,'MarketVisitor'=>$MarketVisitor,'sliderBanner'=>$sliderBanner,'TrendingAction'=>$TrendingAction,'CurrentBid'=>$CurrentBid,'MarketVisitorMonthly'=>$MarketVisitorMonthly,'MarketVisitorWeekly'=>$MarketVisitorWeekly ,'page_title' => '']);
     }
 }

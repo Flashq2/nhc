@@ -17,8 +17,7 @@
                                 <h3 class="nftmax-table__title mb-0">{{$page_title}}</h3>
                             </div>
                             <div class="tab-content" id="myTabContent">
-                               @include('Layyout.table_record')
- 
+                               @include('Layout.table_record')
                             </div>
                         </div>
                     </div>

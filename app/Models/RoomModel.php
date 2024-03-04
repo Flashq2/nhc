@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TableFieldModel extends Model
+class RoomModel extends Model
 {
+    protected $table = 'room'   ;
     use HasFactory;
-    protected $table = 'table_field';
 }

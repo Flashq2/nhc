@@ -33,13 +33,13 @@
                                     </thead>
                                     <!-- NFTMax Table Body -->
                                     <tbody class="nftmax-table__body">
-                                        @foreach
-                                        <tr>
-                                            <td><button class="btn btn-primary" data-id="">Build</button></td>
-                                            <td>1</td>
-                                            <td>room</td>
-                                            <td>1001</td>
-                                        </tr>
+                                        @foreach($records as $record)
+                                            <tr>
+                                                <td><button class="btn btn-primary" data-id="{{$record->id}}" onclick="BuildTable(this)">Build</button></td>
+                                                <td>{{$record->id}}</td>
+                                                <td>{{$record->table_name}}</td>
+                                                <td>{{$record->table_id}}</td>
+                                            </tr>
                                         @endforeach
                                       
                                     </tbody>
@@ -57,5 +57,19 @@
             {{-- @include('Layout.RightSidebar')						 --}}
             @include('Layout.Footer')
             </body>
-
+                <script>
+                   function BuildTable(ctrl){
+                        let code = $(ctrl).attr('data-id');
+                        $.ajax({
+                            type: "POST",
+                            url: "/table/build",
+                            data: {
+                                code : code
+                            },
+                            success: function (response) {
+                                
+                            }
+                        });
+                   }
+                </script>
             </html>

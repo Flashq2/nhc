@@ -8,6 +8,7 @@
     <meta name="keywords" content="Site keywords here">
     <meta name="description" content="#">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Site Title -->
     <title>NFT MAX - NFT Dashboard Template</title>
@@ -47,7 +48,7 @@
                     <!-- Nav Menu -->
                     <div class="menu-bar">
                         <ul class="menu-bar__one">
-                            <li class="active"><a href="{{ url('/') }}"><span class="menu-bar__name">Room</span></span></a></li>
+                            <li class="active"><a href="{{ url('/room') }}"><span class="menu-bar__name">Room</span></span></a></li>
                             <li class="active"><a href="{{ url('/table') }}"><span class="menu-bar__name">Table</span></span></a></li>
                         </ul>
                     </div>
